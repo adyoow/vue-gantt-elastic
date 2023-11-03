@@ -278,7 +278,7 @@ let options = {
         html: true,
         events: {
           click({ data, column }) {
-            alert("description clicked!\n" + data.label);
+            alert("description clicked!\n" + data.label + 'in line' + column);
           }
         }
       },
