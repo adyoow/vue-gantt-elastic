@@ -1,9 +1,11 @@
 import Vue from 'vue';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue';
 import Gantt from './components/Gantt.vue';
-import Info from './components/Info.vue';
 
 import Router from 'vue-router';
+Vue.use(ElementUI)
 Vue.use(Router);
 
 const router = new Router({
@@ -11,10 +13,6 @@ const router = new Router({
     {
       path: '/',
       component: Gantt
-    },
-    {
-      path: '/info',
-      component: Info
     }
   ]
 });
